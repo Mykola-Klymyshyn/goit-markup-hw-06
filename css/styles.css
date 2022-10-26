@@ -607,11 +607,11 @@ img {
   transition: opacity var(--transition-duration) var(--transition-timing-function),
     visibility var(--transition-duration) var(--transition-timing-function);
 }
-.backdrope.is-hidden {
+/* .backdrope.is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
-}
+} */
 .modal {
   position: absolute;
   top: 50%;
@@ -621,6 +621,7 @@ img {
   min-width: 530px;
   background-color: var(--color-white);
   transition: transform var(--transition-duration) var(--transition-timing-function);
+  padding: 0 40px;
 }
 .backdrope.is-hidden .modal {
   transform: translate(-50%, -50%) scale(1.5);
@@ -640,4 +641,29 @@ img {
 .modal-position-btn {
   width: 100%;
   height: 100%;
+}
+.modal-title {
+  padding: 40px 40px 12px;
+}
+.modal-form {
+  padding: 0 40px;
+}
+.form-icon-person,
+.form-icon-phone,
+.form-icon-email {
+  width: 18px;
+  height: 18px;
+}
+.form-label {
+  display: block;
+}
+.form-input {
+  width: 100%;
+  height: 40px;
+  padding: 0 40px;
+}
+
+.form-textarea {
+  width: 100%;
+  height: 120px;
 }
