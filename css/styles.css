@@ -354,6 +354,7 @@ img {
 }
 .specifics-list {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   gap: 30px;
 }
@@ -365,11 +366,13 @@ img {
 
 .ourteam-list {
   display: flex;
+  justify-content: space-between;
   flex-basis: calc((100% - 90px) / 4);
   flex-wrap: wrap;
   gap: 30px;
   margin-top: 50px;
 }
+
 .card-text-position {
   margin: 30px auto 16px;
 }
@@ -386,6 +389,7 @@ img {
 }
 .address-list {
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   gap: 9px;
   margin-bottom: 60px;
@@ -405,6 +409,7 @@ img {
 
 .portfolio-list {
   display: flex;
+  justify-content: space-between;
   flex-basis: calc((100% - 60px) / 3);
   flex-wrap: wrap;
   gap: 30px;
@@ -438,7 +443,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 30px;
 }
 .regular-customers-title {
   margin-bottom: 50px;
@@ -733,4 +738,55 @@ img {
 }
 .checkbox-input:checked + .checkbox-label .checkbox-icon-check {
   background-color: var(--color-accent);
+}
+.footer-form-title {
+  display: flex;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  color: var(--color-white);
+  margin-bottom: 20px;
+}
+.footer-form-input {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  width: 358px;
+  height: 50px;
+  background-color: var(--color-footer);
+}
+.subscribe-footer {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: flex-end;
+  width: 570px;
+  padding: 0 15px;
+}
+
+.footer-form-send-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 200px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: inherit;
+  line-height: 1.87;
+  background: var(--color-accent);
+  color: var(--color-white);
+  letter-spacing: 0.06em;
+  border: none;
+  padding: 10px 28px;
+  border-radius: 4px;
+  transition: background-color var(--transition-duration) var(--transition-timing-function),
+    box-shadow var(--transition-duration) var(--transition-timing-function);
+  cursor: pointer;
+}
+.footer-form-icon-send {
+  fill: var(--color-white);
 }
