@@ -378,7 +378,7 @@ img {
   flex-direction: column;
   width: 230px;
   margin-left: 0px;
-  margin-right: 0px;
+  margin-right: 70px;
 }
 .logo-f {
   margin-top: 60px;
@@ -484,13 +484,14 @@ img {
 .parrent-position {
   display: flex;
   align-items: baseline;
-  gap: 70px;
+  /* gap: 70px; */
 }
 .social-footer {
   display: flex;
   flex-direction: column;
   width: 236px;
   margin-left: 0px;
+  margin-right: 93px;
 }
 .social-title {
   display: flex;
@@ -608,11 +609,11 @@ img {
   transition: opacity var(--transition-duration) var(--transition-timing-function),
     visibility var(--transition-duration) var(--transition-timing-function);
 }
-/* .backdrope.is-hidden {
+.backdrope.is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
-} */
+}
 .modal {
   position: absolute;
   top: 50%;
@@ -642,7 +643,7 @@ img {
   background-color: var(--color-white);
   cursor: pointer;
 }
-
+/* HW-06 */
 .modal-title {
   display: flex;
   align-items: center;
@@ -699,39 +700,23 @@ img {
 }
 .form-button {
   display: block;
-  margin: 30px auto 40px;
+  margin: 0 auto 40px;
 }
 /* Checkbox */
 .checkbox-input {
   appearance: none;
 }
-.checkbox-label {
-  position: relative;
-  padding-left: 28px;
-}
-/* .checkbox-label::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 20px;
-  height: 20px;
-  border: 1px solid var(--color-modal-icon);
-  border-radius: 2px;
-} */
-/* .checkbox-label::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 20px;
-  height: 20px;
-  border: 1px solid var(--color-modal-icon);
-  border-radius: 2px;
-  background-image: url();
-} */
 
+.checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 10px 30px 14px;
+}
 .checkbox-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: var(--secondary-text-color);
   font-size: 14px;
   line-height: 1.7;
@@ -739,4 +724,13 @@ img {
 }
 .checkbox-label > a {
   color: var(--color-accent);
+}
+.checkbox-icon-check {
+  margin-right: 7px;
+  fill: var(--color-white);
+  border: 1px solid var(--color-modal-icon);
+  border-radius: 2px;
+}
+.checkbox-input:checked + .checkbox-label .checkbox-icon-check {
+  background-color: var(--color-accent);
 }

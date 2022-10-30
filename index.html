@@ -447,6 +447,13 @@
             </li>
           </ul>
         </div>
+        <div class="subscribe-footer">
+          <form action="footer-form">
+            <label class="social-title">Підпишіться на розсилку</label>
+            <input class="" id="" type="email" placeholder="E-mail" />
+          </form>
+          <button calss="" type="submit">Підписатися</button>
+        </div>
       </div>
     </footer>
     <div class="backdrope is-hidden" data-modal>
@@ -488,16 +495,20 @@
             cols="30"
             rows="10"
           ></textarea>
-          <input
-            class="checkbox-input visually-hidden"
-            id="terms-checkbox"
-            type="checkbox"
-            name="terms-checkbox"
-          />
-          <label class="checkbox-label" for="terms-checkbox"
-            >Погоджуюся з розсилкою та приймаю
-            <a calss="form-checkbox-link" href="#">Умови договору</a></label
-          >
+          <div class="checkbox">
+            <input
+              class="checkbox-input"
+              id="terms-checkbox"
+              type="checkbox"
+              name="terms-checkbox"
+            />
+            <label class="checkbox-label" for="terms-checkbox">
+              <svg id="terms-checkbox" class="checkbox-icon-check" width="16" height="15">
+                <use href="./images/icons.svg#icon-icon-check"></use></svg
+              >Погоджуюся з розсилкою та приймаю
+              <a calss="form-checkbox-link" href="#">Умови договору</a>
+            </label>
+          </div>
           <button class="form-button hero-button" type="submit">Відправити</button>
         </form>
       </div>
