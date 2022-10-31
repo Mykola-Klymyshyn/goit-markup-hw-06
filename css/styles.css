@@ -724,6 +724,7 @@ img {
 }
 .checkbox-label {
   display: flex;
+  gap: 7px;
   align-items: center;
   justify-content: center;
   color: var(--secondary-text-color);
@@ -735,7 +736,6 @@ img {
   color: var(--color-accent);
 }
 .checkbox-icon-check {
-  margin-right: 7px;
   fill: var(--color-white);
   border: 1px solid var(--color-modal-icon);
   border-radius: 2px;
