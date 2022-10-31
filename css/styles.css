@@ -293,7 +293,7 @@ img {
 /* Початок розмітки Flex*/
 .container {
   width: 100%;
-  max-width: 1230px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -703,6 +703,12 @@ img {
   border-radius: 4px;
   outline: none;
 }
+.form-textarea::placeholder {
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
 .form-button {
   display: block;
   margin: 0 auto 40px;
@@ -757,6 +763,19 @@ img {
   width: 358px;
   height: 50px;
   background-color: var(--color-footer);
+  transition: border-color var(--transition-duration) var(--transition-timing-function);
+  outline: none;
+  color: var(--color-white);
+  padding: 15px;
+}
+.footer-send-email::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-form-input:focus {
+  border-color: var(--color-accent);
 }
 .subscribe-footer {
   display: flex;
@@ -771,13 +790,12 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-
   width: 200px;
   font-size: 16px;
   font-weight: 700;
   font-family: inherit;
   line-height: 1.87;
-  background: var(--color-accent);
+  background-color: var(--color-accent);
   color: var(--color-white);
   letter-spacing: 0.06em;
   border: none;
