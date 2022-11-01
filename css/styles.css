@@ -606,6 +606,7 @@ img {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 2;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
@@ -616,12 +617,14 @@ img {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
+  z-index: 2;
 }
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
   min-height: 580px;
   max-width: 530px;
   background-color: var(--color-white);
@@ -675,6 +678,8 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
+  transition: border-color var(--transition-duration) var(--transition-timing-function);
+  cursor: pointer;
 }
 .form-input:focus {
   border-color: var(--color-accent);
@@ -689,6 +694,7 @@ img {
   top: 50%;
   transform: translateY(-50%);
   fill: var(--color-modal-icon);
+  transition: fill var(--transition-duration) var(--transition-timing-function);
 }
 .form-control:focus-within .form-icon {
   fill: var(--color-accent);
@@ -700,7 +706,13 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
+  resize: none;
+  transition: border-color var(--transition-duration) var(--transition-timing-function);
 }
+.form-textarea:focus {
+  border-color: var(--color-accent);
+}
+
 .form-textarea::placeholder {
   font-size: 12px;
   line-height: 1.2;
@@ -731,6 +743,7 @@ img {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+  cursor: pointer;
 }
 .checkbox-label > a {
   color: var(--color-accent);
@@ -776,6 +789,7 @@ img {
   color: var(--color-white);
   padding: 15px;
   margin-right: 8px;
+  cursor: pointer;
 }
 .footer-form-input::placeholder {
   font-weight: 400;
@@ -817,3 +831,6 @@ img {
   background-color: var(--color-hero-button);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+/* input {
+  cursor: pointer;
+} */
